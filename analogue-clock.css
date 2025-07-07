@@ -10,11 +10,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-image:url(./image/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    height: 100vh;
+     margin-bottom: 0;
+     margin-left: 0;
+     margin-right: 0;
 }
 
 .preloader{
@@ -66,18 +68,11 @@ body {
     justify-content:center ;
     align-items: center;
     background-color: black;
+    border: 10px solid rgb(255, 183, 0);
 }
 
 
-.clock::before {
-    content: "";
-    width: 525px;
-    height: 525px;
-    position: absolute;
-    border-radius:50%;
-    background-color: rgb(255, 183, 0);
-    z-index: -1;
-}
+/*  */
 
 .number{
     transform: rotate(calc(30deg * var(--n)));
@@ -185,7 +180,7 @@ display: inline-block;
 }
 
 .number{
-inset: 10px;
+inset: 5px;
 
 }
 }
