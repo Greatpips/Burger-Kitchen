@@ -1,10 +1,15 @@
+let hrs = document.getElementById("hrs")
+let min = document.getElementById("min")
+let sec = document.getElementById("sec")
 
-let getbars = document.getElementById("bars");
-let getNavlist = document.getElementById("nav-list");
+setInterval(()=>{let currenTime = new Date();
 
-getbars.addEventListener("click", () => {
-  getNavlist.classList.toggle("show");
-});
+hrs.innerHTML = (currenTime.getHours()<10?"0":"") + currenTime.getHours();
+min.innerHTML =(currenTime.getMinutes()<10?"0":"") + currenTime.getMinutes();
+sec.innerHTML =(currenTime.getSeconds()<10?"0":"") + currenTime.getSeconds();
+},1000)
+
+
 
 
 const preLoader = document.querySelector('.preloader')
@@ -44,13 +49,3 @@ preLoader.addEventListener('transitionend', function() {
         document.body.style.overflow = 'auto'
 }, {once:true})
 
-// FAST-FOOD-ACCORDION 
-
- const items = document.querySelectorAll(".accordion-item");
-
-        items.forEach(item => {
-            const header = item.querySelector(".accordion-header");
-            header.addEventListener("click", () => {
-                item.classList.toggle("active");
-            });
-        });
