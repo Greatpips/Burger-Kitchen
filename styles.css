@@ -283,8 +283,12 @@ body {
             margin: 15px 0;
             line-height: 1.4;
             font-size: 1.1rem;
+            
         }
- 
+
+        .accordion-content a {
+            display: block;
+        }
 
         .accordion-content a button{
             text-decoration: none;
@@ -302,7 +306,7 @@ body {
         }
 
         .accordion-item.active .accordion-content {
-            max-height: 200px;
+            max-height: 290px;
             padding: 20px;
         }
 
@@ -424,9 +428,9 @@ body {
     display:inline-block;
 }
 
- .accordion-item.active .accordion-content {
-            max-height: 500px;
-            padding: 20px;
+  .accordion-content p {
+            margin: 20px 0 40px 0;
+            
         }
 
 }
