@@ -424,4 +424,9 @@ body {
     display:inline-block;
 }
 
+ .accordion-item.active .accordion-content {
+            max-height: 200px;
+            padding: px;
+        }
+
 }
