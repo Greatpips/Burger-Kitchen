@@ -183,4 +183,9 @@ display: inline-block;
     left: -70px;
     top: -11px;
 }
+
+.number{
+inset: 10px;
+
+}
 }
